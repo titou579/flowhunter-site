@@ -18,6 +18,8 @@ services:
         value: /data
       - key: NODE_VERSION
         value: 20.11.0
+      - key: SYNC_TOKEN
+        sync: false
     disk:
       name: data
       mountPath: /data
