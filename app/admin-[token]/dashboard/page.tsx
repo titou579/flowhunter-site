@@ -5,7 +5,9 @@ import DashboardClient from './DashboardClient';
 export const dynamic = 'force-dynamic';
 
 export default async function Page({ params }: { params: { token: string } }) {
-  if (params.token !== adminPath()) notFound();
+  // Même correction ici
+  if (adminPath() !== `admin-${params.token}`) notFound();
+  
   if (!(await isAuthed())) redirect(`/${adminPath()}`);
   return <DashboardClient adminPath={adminPath()} />;
 }
