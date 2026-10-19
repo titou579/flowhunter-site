@@ -5,7 +5,9 @@ import LoginForm from './LoginForm';
 export const dynamic = 'force-dynamic';
 
 export default async function Page({ params }: { params: { token: string } }) {
-  if (params.token !== adminPath()) notFound();
+  // On ajoute "admin-" devant le token pour le comparer au chemin complet
+  if (adminPath() !== `admin-${params.token}`) notFound();
+  
   if (await isAuthed()) redirect(`/${adminPath()}/dashboard`);
   return <LoginForm />;
 }
