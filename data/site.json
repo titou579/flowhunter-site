@@ -1,0 +1,23 @@
+{
+  "profile": {
+    "name": "FlowHunter",
+    "tagline": "Bienvenue sur ma chaîne",
+    "bio": "Streamer, gamer, créateur de contenu.",
+    "avatar": "",
+    "banner": ""
+  },
+  "categories": [
+    {
+      "id": "social",
+      "name": "Réseaux sociaux",
+      "color": "#6366f1",
+      "order": 0
+    }
+  ],
+  "links": [],
+  "settings": {
+    "bgImage": "",
+    "bgMusic": "",
+    "defaultTheme": "dark"
+  }
+}
