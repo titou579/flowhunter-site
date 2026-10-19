@@ -13,7 +13,7 @@ services:
       - key: AUTH_SECRET
         generateValue: true
       - key: ADMIN_PATH
-        value: admin.flowhunter
+        value: admin-flowhunter
       - key: STORAGE_DIR
         value: /data
       - key: NODE_VERSION
